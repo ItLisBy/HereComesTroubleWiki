@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>{% block title %}{% endblock %} - HCTWiki</title>
+    </head>
+    <body>
+        <div class="main-header">
+            <a class="header-link" href="/">
+            <div class="header-label">Here Comes Trouble</div>
+            </a>
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>
